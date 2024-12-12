@@ -1,0 +1,82 @@
+* {
+    padding: 10%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    padding: 2rem;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #62ca91; /* Solid background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.birthday-msg {
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    transform: translate(-240%, -360%);
+    color: rgb(253, 253, 253); /* Hide message initially */
+    width: 100%;
+    white-space: nowrap;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    filter: drop-shadow(5px 5px 20px rgb(0, 0, 0, 0.2));
+}
+
+.container {
+    flex: 1;
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.image-1 {
+    position: absolute;
+    top: 50%; /* Centers the image vertically */
+    left: 50%; /* Centers the image horizontally */
+    transform: translate(-50%, -100%); /* Centers the image */
+    width: 250px;
+}
+
+.emoji-center {
+    position: absolute;
+    top: 50%; /* Center the emoji GIF vertically */
+    left: 50%; /* Center the emoji GIF horizontally */
+    transform: translateX(-50%) translateY(-50%); /* Center the emoji exactly */
+}
+
+.btn {
+    position: absolute;
+    top: 76%; /* Move button down */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+    height: 9%; /* Adjust the button height */
+    min-width: 200px;
+    padding: 15%;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    background-color: #f8fafc;
+    border-radius: 15px;
+    box-shadow: 19px 19px 10px rgb(0, 0, 0, 0.1);
+}
